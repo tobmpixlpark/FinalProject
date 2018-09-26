@@ -3,8 +3,16 @@ package com.mkyong.controller;
 import java.io.Serializable;
 
 public class ContactForm implements Serializable {
-    private String vname, zname, passwort;
+    private String vname, zname, passwort, mailadress;
     private int mobilNummer;
+
+    public String getMailadress() {
+        return mailadress;
+    }
+
+    public void setMailadress(String mailadress) {
+        this.mailadress = mailadress;
+    }
 
     public String getVname() {
         return vname;

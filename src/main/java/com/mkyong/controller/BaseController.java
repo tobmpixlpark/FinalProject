@@ -29,7 +29,6 @@ public class BaseController {
         return VIEW_INDEX;
 
     }
-
     @RequestMapping(value = "/{name}", method = RequestMethod.GET)
     public String welcomeName(@PathVariable String name, ModelMap model) {
 
@@ -49,5 +48,4 @@ public class BaseController {
         gson.toJson(contactForm, new FileWriter("C:\\Users\\tobmerx\\Downloads\\CounterWebApp-master\\User\\test.json")); //Daten von Webseite werden in JSON gespechert
         return model;
     }
-
 }
